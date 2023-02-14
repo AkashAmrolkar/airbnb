@@ -1,12 +1,18 @@
-import { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Header from './component/Header'
+import Layout from './component/Layout'
+import Login from './pages/Login'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <h1 className='mt-4 border-gray-300'>Akash</h1>
+      <Routes>
+        <Route path='/' element={<Layout />}>      
+          <Route path='/login' element={<Login />} />
+        </Route>        
+      </Routes>      
     </div>
   )
 }
