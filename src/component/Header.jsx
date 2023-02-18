@@ -8,7 +8,7 @@ const Header = () => {
     <div>
 
         <header className='p-4 flex justify-between'>
-            <a href="/d" className='logo'>
+            <a href="/" className='logo'>
                 <img src={logo} alt='' width='150' height='auto' />
             </a>
              
@@ -17,7 +17,7 @@ const Header = () => {
               <div className='border-r border-gray-300'>Any Week</div>
               <div className=''>Add guests</div>
               <button className='p-2 bg-red-500 rounded-full'>
-                  <FaSearchengin />
+                  <FaSearchengin height='15px' width='15px' />
               </button>
             </div>
 
